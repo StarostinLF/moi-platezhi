@@ -105,10 +105,10 @@
 
   &__card {
     &-list {
-      margin: 0 20px;
+      padding: 0 20px;
       display: flex;
       flex-wrap: wrap;
-      gap: 25px;
+      gap: 40px;
 
       @media (width <= 768px) {
         justify-content: center;
@@ -134,7 +134,7 @@
 
 .card {
   padding: 20px;
-  width: calc((1461px - (25px * 4) - (20px * 2)) / 4);
+  width: calc((1470px - 40px * 4) / 4);
   height: 170px;
   display: flex;
   flex-direction: column;

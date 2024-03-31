@@ -74,6 +74,7 @@
 /* Главная страница */
 
 .main__account {
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -174,10 +175,10 @@
 }
 
 .service__card-list {
-  margin: 0 20px;
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 40px;
 }
 
 @media (width <= 768px) {
@@ -197,7 +198,7 @@
 
 .card {
   padding: 20px;
-  width: 330.25px;
+  width: calc((1470px - 40px * 4) / 4);
   height: 170px;
   display: flex;
   flex-direction: column;
