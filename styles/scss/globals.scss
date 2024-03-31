@@ -84,6 +84,7 @@ body {
 
 .container {
   margin: 0 auto;
+  padding: 0 20px;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
@@ -92,10 +93,6 @@ body {
   inline-size: 100%;
   block-size: 100%;
   overflow-y: scroll;
-
-  @media (width <= 1920px) {
-    padding: 0 20px;
-  }
 }
 
 .main {
