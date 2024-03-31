@@ -1,0 +1,161 @@
+@import "./config/mixins";
+@import "./components/slider.scss";
+
+/* Главная страница */
+
+.main {
+  &__account {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+
+    &-card {
+      @include interFont(var(--main-font-size), 700);
+      padding: 40px;
+      z-index: 0;
+      color: var(--profile-card-text-color);
+      border-radius: 20px;
+      background: var(--profile-card-background-color);
+
+      &-icons {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &-text {
+        &:first-of-type {
+          margin: 20px 0;
+        }
+        &:last-of-type {
+          margin-bottom: 40px;
+        }
+      }
+
+      &-button {
+        &-container {
+          width: fit-content;
+          position: relative;
+        }
+      }
+
+      .icon {
+        width: 36px;
+        height: 36px;
+        fill: var(--profile-card-icon-color);
+      }
+
+      .link {
+        position: relative;
+      }
+
+      .message-counter {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+      }
+    }
+
+    @media (width <= 425px) {
+      justify-content: center;
+    }
+  }
+
+  &__service {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+    }
+  }
+}
+
+.background-button {
+  position: absolute;
+  z-index: -1;
+  top: -4px;
+  left: 4px;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: var(--button-background-color);
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &:last-child {
+    .card {
+      align-items: start;
+      text-align: start;
+
+      @media (width <= 425px) {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    color: var(--title-color);
+  }
+
+  &__card {
+    &-list {
+      margin: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+
+      @media (width <= 768px) {
+        justify-content: center;
+      }
+    }
+
+    &-item {
+      .link {
+        &:hover {
+          .card {
+            box-shadow: 0 10px 20px 10px var(--box-shadow-color);
+
+            &__text {
+              font-weight: 600;
+              color: var(--text-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.card {
+  padding: 20px;
+  width: calc((1461px - (25px * 4) - (20px * 2)) / 4);
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 20px var(--box-shadow-color);
+  transition: var(--transition);
+
+  &__image {
+    width: auto;
+    height: auto;
+  }
+
+  &__text {
+    @include interFont(var(--main-font-size), 400);
+  }
+
+  @media (width <= 768px) {
+    max-width: 300px;
+    height: 140px;
+  }
+}

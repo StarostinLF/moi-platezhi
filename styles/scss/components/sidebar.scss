@@ -1,0 +1,76 @@
+@import "../config/mixins";
+
+/* Боковое меню (Sidebar) */
+
+.sidebar {
+  padding: 40px;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  box-shadow: 0 0 20px var(--box-shadow-color);
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    &-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &_hidden {
+        display: none;
+      }
+
+      @media (width <= 768px) {
+        align-self: center;
+        gap: 25px;
+      }
+    }
+
+    &-item {
+      cursor: pointer;
+
+      &:nth-child(9) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &:hover {
+        font-weight: 700;
+
+        .icon {
+          fill: var(--button-background-color);
+        }
+      }
+
+      &:active,
+      &_active {
+        font-weight: 600;
+
+        .icon {
+          fill: var(--button-background-active-color);
+        }
+      }
+
+      .link {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+
+  @media (width <= 768px) {
+    max-width: unset;
+    gap: 50px;
+  }
+
+  @media (width <= 768px) {
+    padding: 40px 10px;
+  }
+}

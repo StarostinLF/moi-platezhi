@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Мои Платежи</title>
+
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon/favicon.png" />
+
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/css/globals.css" />
+    <link rel="stylesheet" href="./styles/css/sidebar.css" />
+    <link rel="stylesheet" href="./styles/css/header.css" />
+    <link rel="stylesheet" href="./styles/css/footer.css" />
+    <link rel="stylesheet" href="./styles/css/index.css" />
+  </head>
+
+  <body class="page">
+    <nav class="sidebar">
+      <div class="logo-container">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="burger-menu"
+          viewBox="0 0 16 16"
+        >
+          <use href="./images/icons/burger-menu.svg#burger-menu" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="logo">
+          <use href="./images/logo.svg#logo" />
+        </svg>
+      </div>
+      <div class="sidebar__list-container">
+        <ul class="sidebar__list">
+          <li class="sidebar__list-item sidebar__list-item_active">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/home.svg#home" />
+              </svg>
+              Главная
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/profile.svg#profile" />
+              </svg>
+              Лицевые счета
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/readings.svg#readings" />
+              </svg>
+              Ввод показаний
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="./html/payment.html" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/payment.svg#payment" />
+              </svg>
+              Оплата
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/history.svg#history" />
+              </svg>
+              История операций
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/my-house.svg#my-house" />
+              </svg>
+              Мой дом
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/services.svg#services" />
+              </svg>
+              Услуги
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/appeals.svg#appeals" />
+              </svg>
+              Обращения
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/meetings.svg#meetings" />
+              </svg>
+              Собрания
+            </a>
+            <div class="message-counter">2</div>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/office.svg#office" />
+              </svg>
+              Удаленный офис
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/insurance.svg#insurance" />
+              </svg>
+              Страхование жилья
+            </a>
+          </li>
+        </ul>
+        <ul class="sidebar__list">
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/contacts.svg#contacts" />
+              </svg>
+              Контакты
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/help.svg#help" />
+              </svg>
+              Помощь
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header class="header">
+        <button class="basket-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+            <use href="./images/icons/basket.svg#basket" />
+          </svg>
+          Корзина (2): 26 500 р.
+        </button>
+        <address class="header__address address">
+          <p class="address__text">Служба техподдержки</p>
+          <div class="address__link-container">
+            <a href="tel:+78423543027" class="header__link link">
+              +7 (84235) 4-30-27,
+            </a>
+            <a href="tel:+78422272769" class="header__link link">
+              +7 (8422) 27-27-69
+            </a>
+          </div>
+        </address>
+      </header>
+
+      <main class="main">
+        <section class="main__account">
+          <div class="slider">
+            <button class="slider__prev-button" onclick="prevSlide()">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/arrow.svg#arrow" />
+              </svg>
+            </button>
+            <div class="slider__item">
+              <img
+                src="./images/banner/banner-image-1.png"
+                alt="slider image 1"
+                class="slider__image"
+              />
+              <a href="#" class="link">
+                <img
+                  src="./images/banner/banner-image-2.png"
+                  alt="slider image 2"
+                  class="slider__image"
+                />
+              </a>
+            </div>
+            <button class="slider__next-button" onclick="nextSlide()">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="./images/icons/arrow.svg#arrow" />
+              </svg>
+            </button>
+          </div>
+          <article class="main__account-card">
+            <div class="main__account-card-icons">
+              <a href="#" class="main__account-card-link link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                  <use href="./images/icons/notifications.svg#notifications" />
+                </svg>
+                <span class="message-counter">2</span>
+              </a>
+              <a
+                href="./html/profile.html"
+                class="main__account-card-link link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                  <use href="./images/icons/settings.svg#settings" />
+                </svg>
+              </a>
+            </div>
+            <p class="main__account-card-text">
+              Сидоров <br />
+              Николай Владимирович
+            </p>
+            <p class="main__account-card-text">+7 (999) 555-33-33</p>
+            <div class="main__account-card-button-container">
+              <button class="main__account-card-button">Выйти</button>
+              <span class="background-button"></span>
+            </div>
+          </article>
+        </section>
+
+        <section class="main__service-list">
+          <div class="main__service-item service">
+            <h2 class="service__title">Оплата</h2>
+            <ul class="service__card-list">
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-1.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">
+                      Оплата жилого помещения и коммунальных услуг
+                    </p>
+                  </article>
+                </a>
+              </li>
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-2.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">Фонд капитального ремонта</p>
+                  </article>
+                </a>
+              </li>
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-3.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">ПАО "Ульяновскэнерго"</p>
+                  </article>
+                </a>
+              </li>
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-4.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">ПАО "Т Плюс"</p>
+                  </article>
+                </a>
+              </li>
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-5.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">УМУП 'Ульяновскводоканал'</p>
+                  </article>
+                </a>
+              </li>
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-6.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">
+                      ООО "Газпром межрегионгаз Ульяновск"
+                    </p>
+                  </article>
+                </a>
+              </li>
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-7.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">ООО "СвязьАтомИнформ"</p>
+                  </article>
+                </a>
+              </li>
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-8.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">Телевидение ТИН-ТВ (ООО "Сота-Д")</p>
+                  </article>
+                </a>
+              </li>
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-9.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">ПAO "Ростелеком"</p>
+                  </article>
+                </a>
+              </li>
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-8.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">Интернет ТИН-ТВ (ООО "Сота-Д")</p>
+                  </article>
+                </a>
+              </li>
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-10.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">Детские сады</p>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main__service-item service">
+            <h2 class="service__title">Ввод показаний</h2>
+            <ul class="service__card-list">
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-11.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">Электроэнергия</p>
+                  </article>
+                </a>
+              </li>
+              <li class="service__card-item">
+                <a href="#" class="link">
+                  <article class="card">
+                    <img
+                      src="./images/cards/card-12.png"
+                      alt="card image"
+                      class="card__image"
+                    />
+                    <p class="card__text">Капитальный ремонт</p>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="footer__copyright">
+            © 2024 <a href="link">ООО «АИС ГОРОД»</a>
+          </p>
+          <a href="#" class="footer__link link">Официальный сайт РИЦ</a>
+        </div>
+        <div class="footer__container">
+          <address class="footer__address address">
+            <p class="address__text">Электронная почта:</p>
+            <a href="mailto:735151@ric-ul.ru" class="footer__link link">
+              735151@ric-ul.ru
+            </a>
+          </address>
+          <nav class="footer__menu">
+            <a href="#" class="footer__link link">
+              Пользовательское соглашение
+            </a>
+            <a href="#" class="footer__link link">
+              Политика конфеденциальности
+            </a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/slider.js"></script>
+  </body>
+</html>

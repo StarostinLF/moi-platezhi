@@ -1,0 +1,60 @@
+/* Стили слайдера */
+
+.slider {
+  max-width: 1080px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__prev-button,
+  &__next-button {
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    border: none;
+    background: none;
+    box-shadow: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      background: none;
+
+      .icon {
+        fill: var(--arrow-hovered-color);
+      }
+    }
+
+    .icon {
+      fill: var(--arrow-color);
+    }
+  }
+
+  &__prev-button {
+    left: 20px;
+
+    @media (width <= 425px) {
+      left: -10px;
+    }
+  }
+
+  &__next-button {
+    right: 20px;
+
+    .icon {
+      transform: rotateY(180deg);
+    }
+
+    @media (width <= 425px) {
+      right: -10px;
+    }
+  }
+}

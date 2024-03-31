@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* Боковое меню (Sidebar) */
+
+.sidebar {
+  padding: 40px;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  box-shadow: 0 0 20px var(--box-shadow-color);
+}
+
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sidebar__list-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar__list-container_hidden {
+  display: none;
+}
+
+@media (width <= 768px) {
+  .sidebar__list-container {
+    align-self: center;
+    gap: 25px;
+  }
+}
+
+.sidebar__list-item {
+  cursor: pointer;
+}
+
+.sidebar__list-item:nth-child(9) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar__list-item:hover {
+  font-weight: 700;
+}
+
+.sidebar__list-item:hover .icon {
+  fill: var(--button-background-color);
+}
+
+.sidebar__list-item:active,
+.sidebar__list-item_active {
+  font-weight: 600;
+}
+
+.sidebar__list-item:active .icon,
+.sidebar__list-item_active .icon {
+  fill: var(--button-background-active-color);
+}
+
+.sidebar__list-item .link {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+@media (width <= 768px) {
+  .sidebar {
+    max-width: unset;
+    gap: 50px;
+  }
+}
+
+@media (width <= 768px) {
+  .sidebar {
+    padding: 40px 10px;
+  }
+}

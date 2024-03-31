@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Мои Платежи — оплата</title>
+
+    <link rel="icon" href="../images/favicon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../images/favicon/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link rel="apple-touch-icon" href="../images/favicon/favicon.png" />
+
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+    <link rel="stylesheet" href="../styles/css/globals.css" />
+    <link rel="stylesheet" href="../styles/css/sidebar.css" />
+    <link rel="stylesheet" href="../styles/css/header.css" />
+    <link rel="stylesheet" href="../styles/css/footer.css" />
+    <link rel="stylesheet" href="../styles/css/payment.css" />
+  </head>
+
+  <body class="page">
+    <nav class="sidebar">
+      <div class="logo-container">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="burger-menu"
+          viewBox="0 0 16 16"
+        >
+          <use href="../images/icons/burger-menu.svg#burger-menu" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="logo">
+          <use href="../images/logo.svg#logo" />
+        </svg>
+      </div>
+      <div class="sidebar__list-container">
+        <ul class="sidebar__list">
+          <li class="sidebar__list-item">
+            <a href="../index.html" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/home.svg#home" />
+              </svg>
+              Главная
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/profile.svg#profile" />
+              </svg>
+              Лицевые счета
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/readings.svg#readings" />
+              </svg>
+              Ввод показаний
+            </a>
+          </li>
+          <li class="sidebar__list-item sidebar__list-item_active">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/payment.svg#payment" />
+              </svg>
+              Оплата
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/history.svg#history" />
+              </svg>
+              История операций
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/my-house.svg#my-house" />
+              </svg>
+              Мой дом
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/services.svg#services" />
+              </svg>
+              Услуги
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/appeals.svg#appeals" />
+              </svg>
+              Обращения
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/meetings.svg#meetings" />
+              </svg>
+              Собрания
+            </a>
+            <div class="message-counter">2</div>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/office.svg#office" />
+              </svg>
+              Удаленный офис
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/insurance.svg#insurance" />
+              </svg>
+              Страхование жилья
+            </a>
+          </li>
+        </ul>
+        <ul class="sidebar__list">
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/contacts.svg#contacts" />
+              </svg>
+              Контакты
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#" class="link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/help.svg#help" />
+              </svg>
+              Помощь
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header class="header">
+        <button class="basket-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+            <use href="../images/icons/basket.svg#basket" />
+          </svg>
+          Корзина (2): 26 500 р.
+        </button>
+        <address class="header__address address">
+          <p class="address__text">Служба техподдержки</p>
+          <div class="address__link-container">
+            <a href="tel:+78423543027" class="header__link link">
+              +7 (84235) 4-30-27,
+            </a>
+            <a href="tel:+78422272769" class="header__link link">
+              +7 (8422) 27-27-69
+            </a>
+          </div>
+        </address>
+      </header>
+
+      <main class="main">
+        <section class="main__nav">
+          <nav class="main__nav-container">
+            <div class="main__nav-link-list">
+              <a href="../index.html" class="main__nav-link-item link">
+                Главная
+              </a>
+              <span class="main__nav-link-divider">/</span>
+              <a href="#" class="main__nav-link-item link">Оплата</a>
+            </div>
+            <a href="#" class="main__nav-video-container link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use href="../images/icons/play.svg#play" />
+              </svg>
+              <p class="main__nav-video-text">Видеоинструкция</p>
+            </a>
+          </nav>
+          <nav class="main__nav-container">
+            <button class="main__nav-button main__nav-button_active">
+              Быстрая оплата
+            </button>
+            <button class="main__nav-button">Оплата по Л/С</button>
+            <button class="main__nav-button">Автоплатежи</button>
+          </nav>
+        </section>
+
+        <section class="main__payment section">
+          <h2 class="main__payment-title section__title">Быстрая оплата</h2>
+          <form class="filter">
+            <fieldset class="filter__container">
+              <label for="period" class="filter__label">Период</label>
+              <input type="date" id="period" class="filter__input" />
+            </fieldset>
+            <fieldset class="filter__container">
+              <label for="email" class="filter__label">
+                Email адрес для отправки чека:
+              </label>
+              <input
+                type="email"
+                placeholder="Введите еmail"
+                id="email"
+                class="filter__input"
+              />
+            </fieldset>
+          </form>
+          <ul class="main__payment-list">
+            <li class="main__payment-item">
+              <article class="payment-card">
+                <div class="payment-card__container">
+                  <div class="payment-card__title-container">
+                    <img
+                      src="../images/cards/payment-card-1.png"
+                      alt="company-1"
+                      class="payment-card__image"
+                    />
+                    <p class="payment-card__title">ООО "РИЦ"</p>
+                  </div>
+                  <div class="payment-card__subtitle-container">
+                    <p class="payment-card__subtitle">Сумма оплаты</p>
+                    <p class="payment-card__subtitle">Комиссия</p>
+                    <p class="payment-card__subtitle">Оплачивается</p>
+                  </div>
+                </div>
+                <form
+                  class="payment-card__form"
+                  onchange="toggleDisabledState(event)"
+                >
+                  <div class="payment-card__form-container">
+                    <div class="payment-card__form-title-container">
+                      <label class="checkbox-label">
+                        <input
+                          type="checkbox"
+                          class="payment-card__form-checkbox"
+                        />
+                        <span class="pseudo-checkbox"></span>
+                      </label>
+                      <article class="payment-card__form-text-container">
+                        <p class="payment-card__form-title">
+                          Димитровград, ПОБЕДЫ УЛ., 27, 118
+                        </p>
+                        <p class="payment-card__form-text">Л/С: 23100089</p>
+                      </article>
+                    </div>
+                    <div class="payment-card__form-input-container">
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label for="total" class="payment-card__form-label">
+                          Сумма оплаты
+                        </label>
+                        <input
+                          type="text"
+                          id="total"
+                          class="payment-card__form-input"
+                          value="5291.44"
+                        />
+                      </fieldset>
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label for="comission" class="payment-card__form-label">
+                          Комиссия
+                        </label>
+                        <input
+                          type="number"
+                          id="comission"
+                          class="payment-card__form-input"
+                          value="0.00"
+                        />
+                      </fieldset>
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label
+                          for="paymnet-count"
+                          class="payment-card__form-label"
+                        >
+                          Оплачивается
+                        </label>
+                        <select
+                          class="payment-card__form-select"
+                          id="paymnet-count"
+                        >
+                          <option value="value1" selected>5291.44</option>
+                          <option value="value2">Значение 2</option>
+                          <option value="value3">Значение 3</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <hr class="payment-card__form-divider" />
+                  <div class="payment-card__form-container">
+                    <div class="payment-card__form-title-container">
+                      <label class="checkbox-label">
+                        <input
+                          type="checkbox"
+                          class="payment-card__form-checkbox"
+                        />
+                        <span class="pseudo-checkbox"></span>
+                      </label>
+                      <article class="payment-card__form-text-container">
+                        <p class="payment-card__form-title">
+                          Димитровград, ЛЕНИНА ПР., 27, 118
+                        </p>
+                        <p class="payment-card__form-text">Л/С: 22554889</p>
+                      </article>
+                    </div>
+                    <div class="payment-card__form-input-container">
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label for="total" class="payment-card__form-label">
+                          Сумма оплаты
+                        </label>
+                        <input
+                          type="text"
+                          id="total"
+                          class="payment-card__form-input"
+                          value="3458.88"
+                        />
+                      </fieldset>
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label for="comission" class="payment-card__form-label">
+                          Комиссия
+                        </label>
+                        <input
+                          type="number"
+                          id="comission"
+                          class="payment-card__form-input"
+                          value="0.00"
+                        />
+                      </fieldset>
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label
+                          for="paymnet-count"
+                          class="payment-card__form-label"
+                        >
+                          Оплачивается
+                        </label>
+                        <select
+                          class="payment-card__form-select"
+                          id="paymnet-count"
+                        >
+                          <option value="value1" selected>3458.88</option>
+                          <option value="value2">Значение 2</option>
+                          <option value="value3">Значение 3</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <hr class="payment-card__form-divider" />
+                  <div class="payment-card__form-container">
+                    <div class="payment-card__form-title-container">
+                      <label class="checkbox-label">
+                        <input
+                          type="checkbox"
+                          class="payment-card__form-checkbox"
+                        />
+                        <span class="pseudo-checkbox"></span>
+                      </label>
+                      <article class="payment-card__form-text-container">
+                        <p class="payment-card__form-title">
+                          Димитровград, ДРОГОБЫЧСКАЯ УЛ., 27, 118
+                        </p>
+                        <p class="payment-card__form-text">Л/С: 30000558</p>
+                      </article>
+                    </div>
+                    <div class="payment-card__form-input-container">
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label for="total" class="payment-card__form-label">
+                          Сумма оплаты
+                        </label>
+                        <input
+                          type="text"
+                          id="total"
+                          class="payment-card__form-input"
+                          value="658.28"
+                        />
+                      </fieldset>
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label for="comission" class="payment-card__form-label">
+                          Комиссия
+                        </label>
+                        <input
+                          type="number"
+                          id="comission"
+                          class="payment-card__form-input"
+                          value="0.00"
+                        />
+                      </fieldset>
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label
+                          for="paymnet-count"
+                          class="payment-card__form-label"
+                        >
+                          Оплачивается
+                        </label>
+                        <select
+                          class="payment-card__form-select"
+                          id="paymnet-count"
+                        >
+                          <option value="value1" selected>658.28</option>
+                          <option value="value2">Значение 2</option>
+                          <option value="value3">Значение 3</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </article>
+              <form class="payment-form">
+                <fieldset class="payment-form__container">
+                  <label for="total-price" class="payment-form__label">
+                    Сумма квитанции:
+                  </label>
+                  <div class="payment-form__input-container">
+                    <input
+                      type="text"
+                      id="total-price"
+                      disabled
+                      value="8791.44"
+                      class="payment-form__input"
+                    />
+                    <img
+                      src="../images/payment/credit-card-types.png"
+                      alt="credit-card-types"
+                      class="payment-form__image"
+                    />
+                  </div>
+                </fieldset>
+                <fieldset class="payment-form__container">
+                  <label for="total-price" class="payment-form__label">
+                    Банковская карта:
+                  </label>
+                  <select class="payment-form__select">
+                    <option value="value1" selected>1234567890</option>
+                    <option value="value2">Значение 2</option>
+                    <option value="value3">Значение 3</option>
+                  </select>
+                </fieldset>
+                <button class="payment-form__button">Оплатить</button>
+                <span class="payment-form__note">
+                  * Произвести оплату можно картой любого банка
+                </span>
+              </form>
+            </li>
+            <li class="main__payment-item">
+              <article class="payment-card">
+                <div class="payment-card__container">
+                  <div class="payment-card__title-container">
+                    <img
+                      src="../images/cards/card-3.png"
+                      alt="company-2"
+                      class="payment-card__image"
+                    />
+                    <p class="payment-card__title">ПАО "Ульяновскэнерго"</p>
+                  </div>
+                  <div class="payment-card__subtitle-container">
+                    <p class="payment-card__subtitle">Сумма оплаты</p>
+                    <p class="payment-card__subtitle">Комиссия</p>
+                    <p class="payment-card__subtitle">Оплачивается</p>
+                  </div>
+                </div>
+                <form
+                  class="payment-card__form"
+                  onchange="toggleDisabledState(event)"
+                >
+                  <div class="payment-card__form-container">
+                    <div class="payment-card__form-title-container">
+                      <label class="checkbox-label">
+                        <input
+                          type="checkbox"
+                          class="payment-card__form-checkbox"
+                        />
+                        <span class="pseudo-checkbox"></span>
+                      </label>
+                      <article class="payment-card__form-text-container">
+                        <p class="payment-card__form-title">
+                          Димитровград, ПОБЕДЫ УЛ., 27, 118
+                        </p>
+                        <p class="payment-card__form-text">Л/С: 5468899</p>
+                      </article>
+                    </div>
+                    <div class="payment-card__form-input-container">
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label for="total" class="payment-card__form-label">
+                          Сумма оплаты
+                        </label>
+                        <input
+                          type="text"
+                          id="total"
+                          class="payment-card__form-input"
+                          value="391.44"
+                        />
+                      </fieldset>
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label for="comission" class="payment-card__form-label">
+                          Комиссия
+                        </label>
+                        <input
+                          type="number"
+                          id="comission"
+                          class="payment-card__form-input"
+                          value="0.00"
+                        />
+                      </fieldset>
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label
+                          for="paymnet-count"
+                          class="payment-card__form-label"
+                        >
+                          Оплачивается
+                        </label>
+                        <select
+                          class="payment-card__form-select"
+                          id="paymnet-count"
+                        >
+                          <option value="value1" selected>391.44</option>
+                          <option value="value2">Значение 2</option>
+                          <option value="value3">Значение 3</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <hr class="payment-card__form-divider" />
+                  <div class="payment-card__form-container">
+                    <div class="payment-card__form-title-container">
+                      <label class="checkbox-label">
+                        <input
+                          type="checkbox"
+                          class="payment-card__form-checkbox"
+                        />
+                        <span class="pseudo-checkbox"></span>
+                      </label>
+                      <article class="payment-card__form-text-container">
+                        <p class="payment-card__form-title">
+                          Димитровград, ЛЕНИНА ПР., 27, 118
+                        </p>
+                        <p class="payment-card__form-text">Л/С: 4987900</p>
+                      </article>
+                    </div>
+                    <div class="payment-card__form-input-container">
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label for="total" class="payment-card__form-label">
+                          Сумма оплаты
+                        </label>
+                        <input
+                          type="text"
+                          id="total"
+                          class="payment-card__form-input"
+                          value="86.86"
+                        />
+                      </fieldset>
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label for="comission" class="payment-card__form-label">
+                          Комиссия
+                        </label>
+                        <input
+                          type="number"
+                          id="comission"
+                          class="payment-card__form-input"
+                          value="0.00"
+                        />
+                      </fieldset>
+                      <fieldset class="payment-card__form-input-fieldset">
+                        <label
+                          for="paymnet-count"
+                          class="payment-card__form-label"
+                        >
+                          Оплачивается
+                        </label>
+                        <select
+                          class="payment-card__form-select"
+                          id="paymnet-count"
+                        >
+                          <option value="value1" selected>86.86</option>
+                          <option value="value2">Значение 2</option>
+                          <option value="value3">Значение 3</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </article>
+              <form class="payment-form">
+                <fieldset class="payment-form__container">
+                  <label for="total-price" class="payment-form__label">
+                    Сумма квитанции:
+                  </label>
+                  <div class="payment-form__input-container">
+                    <input
+                      type="text"
+                      id="total-price"
+                      disabled
+                      value="491.44"
+                      class="payment-form__input"
+                    />
+                    <img
+                      src="../images/payment/credit-card-types.png"
+                      alt="credit-card-types"
+                      class="payment-form__image"
+                    />
+                  </div>
+                </fieldset>
+                <fieldset class="payment-form__container">
+                  <label for="total-price" class="payment-form__label">
+                    Банковская карта:
+                  </label>
+                  <select class="payment-form__select">
+                    <option value="value1" selected>1234567890</option>
+                    <option value="value2">Значение 2</option>
+                    <option value="value3">Значение 3</option>
+                  </select>
+                </fieldset>
+                <button class="payment-form__button">Оплатить</button>
+                <span class="payment-form__note">
+                  * Произвести оплату можно картой любого банка
+                </span>
+              </form>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/toggle-checkbox.js"></script>
+  </body>
+</html>

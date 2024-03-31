@@ -1,0 +1,406 @@
+@import "./config/mixins";
+
+/* Страница оплаты */
+
+.main {
+  &__nav {
+    &-container {
+      &:first-child {
+        justify-content: space-between;
+      }
+
+      &:last-child {
+        flex-wrap: wrap;
+        gap: 20px;
+
+        @media (width <= 425px) {
+          justify-content: center;
+        }
+      }
+    }
+
+    &-button {
+      font-weight: 600;
+      padding: 10px 25px;
+      border-radius: 10px;
+      color: var(--button-text-color);
+      background: var(--payment-button-color);
+
+      &:active,
+      &_active {
+        color: var(--button-background-color);
+        outline: 4px solid #ece4ec;
+        outline-offset: -4px;
+        background: none;
+      }
+    }
+  }
+
+  &__payment {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-container {
+      display: flex;
+      gap: 5px;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+    }
+
+    &-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 25px;
+
+      @media (width <= 768px) {
+        justify-content: center;
+      }
+    }
+
+    &-image {
+      max-width: 44px;
+      max-height: 27px;
+    }
+
+    &-text {
+      font-weight: 600;
+    }
+  }
+}
+
+.payment {
+  &-card {
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__container {
+      margin: 0 auto;
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__image {
+      width: auto;
+      height: auto;
+    }
+
+    &__title {
+      &-container {
+        font-weight: 600;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+
+    &__subtitle {
+      &-container {
+        display: flex;
+        gap: 80px;
+        color: var(--payment-card-text-color);
+
+        @media (width <= 1024px) {
+          display: none;
+        }
+      }
+    }
+
+    @media (width <= 1440px) {
+      flex-wrap: wrap;
+    }
+
+    @media (width <= 1024px) {
+    }
+
+    &__form {
+      position: relative;
+      flex-direction: column;
+      gap: unset;
+      border-radius: 15px;
+      box-shadow: 0 0 20px var(--box-shadow-color);
+
+      &-container {
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+
+        :disabled {
+          opacity: 1;
+        }
+
+        &_disabled {
+          opacity: 1;
+          color: var(--fieldset-disabled-color);
+
+          input,
+          label,
+          select {
+            color: inherit;
+          }
+
+          input {
+            border-color: var(--fieldset-disabled-color);
+          }
+        }
+
+        @media (width <= 1024px) {
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+      }
+
+      &-title {
+        &-container {
+          display: flex;
+          gap: 6px;
+        }
+      }
+
+      &-text {
+        font-size: 12px;
+      }
+
+      &-checkbox {
+        position: absolute;
+        inline-size: 1px;
+        block-size: 1px;
+        overflow: hidden;
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+        white-space: nowrap;
+      }
+
+      &-input {
+        width: 126px;
+        border: 2px solid var(--button-background-color);
+        border-radius: 10px;
+
+        &-container {
+          display: flex;
+          gap: 75px;
+
+          @media (width <= 1440px) {
+            gap: 70px;
+          }
+
+          @media (width <= 1200px) {
+            gap: 60px;
+          }
+
+          @media (width <= 1024px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+          }
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &:focus-visible {
+          border-color: var(--link-hovered-color);
+        }
+
+        &-fieldset {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          &:nth-child(2) {
+            input {
+              max-width: 50px;
+              padding-left: 0;
+              padding-right: 0;
+              text-align: center;
+              border: none;
+            }
+          }
+
+          &:last-child {
+            select {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      &-divider {
+        margin: 0;
+        width: 100%;
+        border: 1px solid var(--input-background-color);
+      }
+
+      &-checkbox {
+        border: 2px solid var(--checkbox-border-color);
+      }
+
+      &-text {
+        font-weight: 400;
+        font-style: 12px;
+      }
+
+      &-label {
+        display: block;
+
+        @media (width >= 1024px) {
+          display: none;
+        }
+      }
+
+      &-select {
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:focus-visible {
+          border-color: var(--link-hovered-color);
+        }
+      }
+    }
+  }
+
+  &-form {
+    padding: 30px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid var(--payment-card-border-color);
+    border-radius: 15px;
+
+    &__container {
+      padding: 0;
+      border: none;
+
+      &:last-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+
+    &__label {
+      font-weight: 400;
+      color: var(--button-background-color);
+    }
+
+    &__input {
+      font-weight: 800;
+      font-size: 24px;
+      padding: 0;
+      max-width: 110px;
+      flex: 1 1 auto;
+      color: var(--text-color);
+      border: none;
+      background: none;
+
+      &-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &__image {
+      width: auto;
+      height: auto;
+    }
+
+    &__select {
+      border: 2px solid var(--button-background-color);
+      border-radius: 10px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        border-color: var(--link-hovered-color);
+      }
+    }
+
+    &__button {
+      font-weight: 800;
+      padding: 10px 0;
+    }
+
+    &__note {
+      font-weight: 400;
+    }
+  }
+}
+
+.filter {
+  @include gramatikaMeduimFont(var(--main-font-size), 600);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  &__container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+  }
+
+  &__label {
+    font-weight: 400;
+    color: var(--button-background-color);
+  }
+
+  &__input {
+    border: 2px solid var(--button-background-color);
+    border-radius: 10px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      border-color: var(--link-hovered-color);
+    }
+  }
+
+  @media (width <= 425px) {
+    justify-content: center;
+  }
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pseudo-checkbox {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--checkbox-border-color);
+  border-radius: 4px;
+}
+
+.payment-card__form-checkbox:checked + .pseudo-checkbox::after {
+  content: "";
+  display: block;
+  width: 19px;
+  height: 15px;
+  background: no-repeat url(../../images/icons/checked.svg);
+}

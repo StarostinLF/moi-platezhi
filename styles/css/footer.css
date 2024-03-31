@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* Подвал (Footer) */
+
+.footer {
+  padding: 40px 0;
+  text-wrap: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer .link {
+  text-decoration: underline;
+}
+
+.footer__address {
+  display: flex;
+  gap: 5px;
+}
+
+.footer__address .link {
+  text-decoration: none;
+}
+
+@media (width <= 425px) {
+  .footer__address {
+    justify-content: center;
+  }
+}
+
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (width <= 425px) {
+  .footer__menu {
+    gap: 10px;
+    justify-content: center;
+  }
+}
+
+@media (width <= 425px) {
+  .footer {
+    justify-content: center;
+  }
+}

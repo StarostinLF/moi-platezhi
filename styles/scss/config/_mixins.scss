@@ -1,0 +1,17 @@
+@mixin openSansFont($fs, $fw) {
+  font-family: var(--main-font-family);
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin interFont($fs, $fw) {
+  font-family: var(--secondary-font-family);
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin gramatikaMeduimFont($fs, $fw) {
+  font-family: var(--third-font-family);
+  font-size: $fs;
+  font-weight: $fw;
+}

@@ -1,0 +1,41 @@
+/* Подвал (Footer) */
+
+.footer {
+  padding: 40px 0;
+  text-wrap: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .link {
+    text-decoration: underline;
+  }
+
+  &__address {
+    display: flex;
+    gap: 5px;
+
+    .link {
+      text-decoration: none;
+    }
+
+    @media (width <= 425px) {
+      justify-content: center;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media (width <= 425px) {
+      gap: 10px;
+      justify-content: center;
+    }
+  }
+
+  @media (width <= 425px) {
+    justify-content: center;
+  }
+}

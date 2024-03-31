@@ -1,0 +1,86 @@
+@import "./config/mixins";
+
+/* Страница редактирования профиля */
+
+.main {
+  &__nav {
+    &-container {
+      justify-content: space-between;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      @media (width <= 425px) {
+        justify-content: center;
+      }
+    }
+
+    &-button {
+      padding: 10px 25px;
+      align-self: start;
+    }
+
+    &-link {
+      text-decoration: underline;
+      color: var(--link-hovered-color);
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+.nav {
+  &__button {
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: var(--button-text-color);
+    background: var(--payment-button-color);
+
+    &:active,
+    &_active {
+      color: var(--button-background-color);
+      outline: 4px solid #ece4ec;
+      outline-offset: -4px;
+      background: none;
+    }
+  }
+}
+
+.form {
+  flex-direction: column;
+
+  &__container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+  }
+
+  &__label {
+    font-weight: 400;
+    color: var(--button-background-color);
+  }
+
+  &__input {
+    max-width: 320px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: var(--input-background-color);
+  }
+}
